@@ -91,8 +91,7 @@ function chart([data, us]) {
   const svg = d3
     .select(selector)
     .append('svg')
-    .attr('width', width)
-    .attr('height', height)
+    .attr('viewBox', [0, 0, width, height])
     .call(tip) // Required to call in the vis context, to display the tooltip
 
   /* Legends */
